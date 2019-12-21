@@ -19,6 +19,8 @@ class Song
     self.all << song
     song
   end
+  
+  
 end
 
 
