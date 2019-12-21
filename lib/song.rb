@@ -9,16 +9,4 @@ class Song
   def save
     self.class.all << self
   end
-  def song
-    song = Song.create
-    Song.all.include?(song)
-  end
-  
-  def self.create(title)
-    song = self.new 
-    self.all << song
-    song
-  end
-  
-  
-end
+
