@@ -9,5 +9,20 @@ class Song
   def save
     self.class.all << self
   end
-
+  def song
+    song = Song.create
+    Song.all.include?(song)
+  end
+  
+  def self.create(song)
+    song = self.new 
+    song.title = song
+    @all << song
+  end
 end
+
+
+s = Song.new
+s.name = "The Ship Song"
+s.artist_name = "Nick Cave"
+s.save
